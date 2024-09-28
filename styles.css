@@ -1,35 +1,92 @@
-/* Outdated CSS */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-h1 {
-    margin: 0;
+header {
+    background-color: #0a82e4;
+    text-align: center;
+    padding: 10px;
+    color: white;
 }
 
-ul {
+h1, h2, p {
+    margin: 0 0 10px;
+    padding: 0;
+}
+
+nav {
+    background-color: #333333;
+    text-align: center;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
     margin: 0;
     padding: 0;
 }
 
-li {
-    margin: 0;
-    padding: 0;
+nav ul li {
+    display: inline;
+    margin-right: 15px;
 }
 
-p {
-    margin: 0;
-    padding: 0;
+nav ul li a {
+    color: white;
+    text-decoration: none;
 }
 
-img {
+footer {
+    background-color: #0a82e4;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+
+main {
+    padding: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.image-box {
+    border: 2px solid #333;
+    padding: 10px;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+.image-box img {
     width: 100%;
     height: auto;
 }
 
-table {
+.content-box {
+    flex: 1;
+    padding: 10px;
+}
+
+.sink1 .image-box img {
     width: 100%;
-    border-collapse: collapse;
+    height: auto;
+}
+
+.sink2 .image-box img {
+    width: 100%;
+    height: 616px;
+}
+
+.sink3 .image-box img {
+    width: 100%;
+    height: auto;
+}
+
+.content-box:not(:last-child) {
+    margin-bottom: 20px;
 }
